@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<!--
+    首页
+-->
+<head>
+  <meta charset="utf-8">
+  <title>物联网工程实验室-首页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/bitbug_favicon.ico" type="image/x-icon" />
+  <link href="static/css/base.css" rel="stylesheet">
+  <link href="static/css/index.css" rel="stylesheet">
+  <link href="static/css/m.css" rel="stylesheet">
+  <script src="static/js/jquery.min.js" type="text/javascript"></script>
+  <script src="static/js/jquery.easyfader.min.js"></script>
+  <script src="static/js/scrollReveal.js"></script>
+  <script src="static/js/common.js"></script>
+</head>
+<body>
+  <header id="header">
+    <!--menu begin-->
+    <div class="menu">
+      <nav class="nav" id="topnav">
+        <h1 class="logo"><a href="">物联网工程实验室</a></h1>
+        <li><a href="">网站首页</a> </li>
+        <li><a href="https://www.csdn.net/">文章列表</a>
+          <ul class="sub-nav">
+              <li><a href="https://www.geek-workshop.com/">硬件</a></li>
+            <li><a href="https://www.runoob.com/cplusplus/cpp-tutorial.html">C++</a></li>
+            <li><a href="https://www.bilibili.com/video/BV1xs411Q799?from=search&seid=4632222617238938097&spm_id_from=333.337.0.0">Python</a></li>
+            <li><a href="https://www.w3school.com.cn/index.html">网页前端</a></li>
+            <li><a href="https://www.runoob.com/m/java/java-tutorial.html">Java</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.nsu.edu.cn/img/article/129/01.jpg">相册</a></li>
+        <li><a href="https://www.nsu.edu.cn/HTML/intro/article_11.html">关于我们</a> </li>
+        <li><a href="http://127.0.0.1:8000/login">发表文章</a></li>
+      </nav>
+    </div>
+    <a href="/login_" id="login" target="_blank">登录</a>
+    <a href="/register" id="register" target="_blank">注册</a>
+    <!--menu end-->
+  </header>
+  <article>
+    <!--banner begin-->
+    <div class="picsbox">
+      <div class="banner">
+        <div id="banner" class="fader">
+          <li class="slide"><a href="https://www.jianshu.com/p/7938400cda40" target="_blank"><img src="static/images/index/arduino2.png/"><span class="imginfo">硬件-Arduino开发板</span></a></li>
+          <li class="slide"><a href="https://subingwen.cn/qt/" target="_blank"><img src="static/images/index/C++.jpg"><span class="imginfo">C++编程语言-QT教程</span></a></li>
+          <li class="slide"><a href="https://www.runoob.com/python/python-tutorial.html" target="_blank"><img src="static/images/index/Python.png"><span class="imginfo">Python编程语言-基础教程</span></a></li>
+          <div class="fader_controls">
+            <div class="page prev" data-target="prev">&lsaquo;</div>
+            <div class="page next" data-target="next">&rsaquo;</div>
+            <ul class="pager_list">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--banner end-->
+      <div class="toppic">
+        <li> <a href="https://subingwen.cn/linux/" target="_blank"> <i><img src="static/images/index/linux.png"></i>
+            <h2>Linux中的命令</h2>
+            <span>Linux</span>
+          </a> </li>
+        <li> <a href="https://www.w3school.com.cn/js/index.asp" target="_blank"> <i><img src="static/images/index/js.png"></i>
+            <h2>JS在前端网页中的应用</h2>
+            <span>JS</span>
+          </a> </li>
+      </div>
+    </div>
+    <div class="blank"></div>
+    <!--blogsbox begin-->
+    <div class="blogsbox">
+      <div class="blogs" data-scroll-reveal="enter bottom over 1s">
+        <h3 class="blogtitle"><a href="https://www.cnblogs.com/codexy/p/8507894.html" target="_blank">Python语言在人工智能(AI)中的优势 </a></h3>
+        <span class="blogpic"><a href="https://www.cnblogs.com/codexy/p/8507894.html" title=""><img src="static/images/index/Artificial-intelligence.jpg" alt=""></a></span>
+        <p class="blogtext">本文探讨了Python语言在AI领域的优势与运用。 谁会成为AI 和大数据时代的第一开发语言? 这本已是一个不需要争论的问题。如果说三年前,Matlab、Scala、R、Java
+          ...</p>
+        <div class="bloginfo">
+          <ul>
+            <li class="author"><a href="https://space.bilibili.com/184977396">李熠桐</a></li>
+            <li class="lmname"><a href="https://space.bilibili.com/184977396">学无止境</a></li>
+            <li class="timer">2021年9月8日</li>
+            <li class="view"><span>20</span>已阅读</li>
+            <li class="like">99</li>
+          </ul>
+        </div>
+
+          {#include用于引入其他页面#}
+          {% include 'footer.html' %}
+  <a href="#" class="cd-top">Top</a>
+      </div>
+    </div>
+  </article>
+</body>
+</html>
+
+

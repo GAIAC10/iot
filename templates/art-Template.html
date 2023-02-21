@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验art-Template</title>
+    <script src="/static/js/art-template.js"></script>
+</head>
+
+<body>
+    <ul id="test-artTemplate">
+    <li>这是初始的li标签</li>
+    </ul>
+　　<button onclick="Add_li()">增加li标签</button>
+</body>
+
+<script type="text/html" id="test-item" >
+        {% verbatim %}
+           <!-- each是循环变量：遍历对象，遍历的值，遍历的下标 -->
+            {{each target value index}}
+　　　　　　　<li>
+　　　　　　　　<!-- 可以通过 value.key 的方式得到对象中的值 -->
+　　　　　　　　 <p>索引：{{index}} | 姓名：{{value.username}} | 年龄：{{value.age}} | 爱好：{{value.hobby.bobby1}}</p>
+　　　　　　　</li>
+            {{/each}}
+        {% endverbatim %}
+</script>
+
+</html>
+
+
+{#查看更多#}
+{#例子：#}
+{#<script type="text/html" id="listt">#}
+{#{% verbatim %}#}
+{#html代码#}
+{#<div class="blogs" data-scroll-reveal="enter bottom over 1s" data-scroll-reveal-id="1" style="-webkit-transform: translatey(0);transform: translatey(0);opacity: 1;-webkit-transition: -webkit-transform 1s ease-in-out 0s,  opacity 1s ease-in-out 0s;transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-scroll-reveal-initialized="true">#}
+{#   <h3 class="blogtitle"><a href="/yu/topics/detail/1" target="_blank">a</a></h3>#}
+{#   <p class="blogtext">aaaaa...</p>#}
+{#   <div class="bloginfo">#}
+{#    <ul>#}
+{#     <li class="author">Thedevil</li>#}
+{#     <li class="timer">2021-09-10 11:57:24</li>#}
+{#     <li class="" style="display:none"></li>#}
+{#     <li class="" style="padding-left:20px">编辑</li>#}
+{#     <li class="delete" onclick="delete" style="padding-left:20px" data="1">删除</li>#}
+{#    </ul>#}
+{#   </div>#}
+{#  </div>#}
+{#{% endverbatim %}#}
+{#</script>#}
+{#js代码#}
+{#<script>#}
+{#    var tpl = Template("listt",{""})#}
+{#    $(".blogbox").append()#}
+{#</script>#}
+
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>实验art-Template</title>#}
+{#    <script src="/static/js/art-template.js"></script>#}
+{#</head>#}
+{##}
+{#<body>#}
+{#</body>#}
+{##}
+{#<script type="text/html" id="body_verbatim" >#}
+{#        {% verbatim %}#}
+{#        <ul id="test-artTemplate">#}
+{#        <li>这是初始的li标签</li>#}
+{#        </ul>#}
+{#    　　<button onclick="Add_li()">增加li标签</button>#}
+{#        {% endverbatim %}#}
+{#</script>#}
+{##}
+{#<script>#}
+{#    function Add_li() {　#}
+{#　　　　var addli_html = Template('body_verbatim',{fun});　#}
+{#       $("test-artTemplate").append(addli_html)#}
+{#    }#}
+{#</script>#}
+{#</html>#}
